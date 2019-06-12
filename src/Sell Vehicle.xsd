@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="Cars">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Car">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CarID" type="xs:integer"/>
+                            <xs:element name="Year">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1940"/>
+                                        <xs:maxInclusive value="2020"/>    
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Make">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Abar"/>
+                                        <xs:enumeration value="Acur"/>
+                                        <xs:enumeration value="Alfa Romeo"/>
+                                        <xs:enumeration value="AMC"/>
+                                        <xs:enumeration value="Aston Martin"/>
+                                        <xs:enumeration value="Atom 3"/>
+                                        <xs:enumeration value="BMW"/>
+                                        <xs:enumeration value="Chevrolet"/>
+                                        <xs:enumeration value="Daihatsu"/>
+                                        <xs:enumeration value="Etud"/>
+                                        <xs:enumeration value="Ford"/>
+                                        <xs:enumeration value="General Motors (GM)"/>
+                                        <xs:enumeration value="Jeep"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Model">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Mileage">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="100000"/>    
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Engine_Size">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="4 Cylinder"/>
+                                        <xs:enumeration value="6 Cylinder"/>
+                                        <xs:enumeration value="8 Cylinder"/>
+                                        <xs:enumeration value="10 Cylinder"/>
+                                        <xs:enumeration value="12 Cylinder"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Option">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Basic"/>
+                                        <xs:enumeration value="Mid Option"/>
+                                        <xs:enumeration value="Full Option"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Paint">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Original Paint"/>
+                                        <xs:enumeration value="Partilly Repainted"/>
+                                        <xs:enumeration value="Totally  Repainted"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Has_GCC_Specs">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Any_other_remarks" type="xs:string"/>
+                            <xs:element name="First_Name" type="xs:string"/>
+                            <xs:element name="Last_Name" type="xs:string"/>
+                            <xs:element name="Phone_Number" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Accident_History">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Full_Service_History">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Do_you_have_photos_of_the_vehicle">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

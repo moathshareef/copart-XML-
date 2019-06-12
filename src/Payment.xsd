@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="payments">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="payment">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CarID" type="xs:positiveInteger"/>
+                            <xs:element name="Date" type="xs:string"/>
+                            <xs:element name="Member_Number" type="xs:positiveInteger"/>
+                            <xs:element name="Member_Name" type="xs:string"/>
+                            <xs:element name="Membership_Country" type="xs:string"/>
+                            <xs:element name="Contact_Number" type="xs:positiveInteger"/>
+                            <xs:element name="Country_Of_the_bank_account_money_is_deposited" type="xs:string"/>
+                            <xs:element name="Payment_Currency_Denomination" type="xs:string"/>
+                            <xs:element name="Total_Payment_Amount" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

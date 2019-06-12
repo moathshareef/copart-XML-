@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?xml-stylesheet type="text/xsl" href="Vehicle Stylesheet.xsl"?>
+
+	
+<Cars xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Sell Vehicle.xsd">
+    <Car>
+        <CarID>91</CarID>
+        <Year>1940</Year>
+        <Make>BMW</Make>
+        <Model>750 Li</Model>
+        <Mileage>60000</Mileage>
+        <Engine_Size>4 Cylinder</Engine_Size>
+        <Option>Full Option</Option>
+        <Paint>Original Paint</Paint>
+        <Has_GCC_Specs>Yes</Has_GCC_Specs>
+        <Any_other_remarks>N/A</Any_other_remarks>
+        <First_Name>Moath</First_Name>
+        <Last_Name>Shareef</Last_Name>
+        <Phone_Number>00962797965006</Phone_Number>
+        <Email>moathshareef@gmail.com</Email>
+        <Accident_History>No</Accident_History>
+        <Full_Service_History>Yes</Full_Service_History>
+        <Do_you_have_photos_of_the_vehicle>Yes</Do_you_have_photos_of_the_vehicle>
+    </Car>
+</Cars>

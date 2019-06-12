@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?xml-stylesheet type="text/xsl" href="payment.xsl"?>
+
+<payments xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="Payment.xsd">
+    
+    <payment>
+        <CarID>91</CarID>
+        <Date>20-1-2019</Date>
+        <Member_Number>20160447</Member_Number>
+        <Member_Name>moath shareef</Member_Name>
+        <Membership_Country>jordan</Membership_Country>
+        <Contact_Number>20155425</Contact_Number>
+        <Country_Of_the_bank_account_money_is_deposited>palestine</Country_Of_the_bank_account_money_is_deposited>
+        <Payment_Currency_Denomination>JD</Payment_Currency_Denomination>
+        <Total_Payment_Amount>12000</Total_Payment_Amount>
+    </payment>
+    
+</payments>
